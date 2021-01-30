@@ -1,0 +1,7 @@
+﻿namespace NewTech.ProjectsNG.Authorization.Delegation
+{
+    public interface IUserDelegationConfiguration
+    {
+        bool IsEnabled { get; set; }
+    }
+}

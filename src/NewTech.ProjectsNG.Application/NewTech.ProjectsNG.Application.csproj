@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props"></Import>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>NewTech.ProjectsNG.Application</AssemblyName>
+    <PackageId>NewTech.ProjectsNG.Application</PackageId>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace>NewTech.ProjectsNG</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Abp.EntityFrameworkCore.EFPlus" Version="5.10.1" />
+    <PackageReference Include="NPOI" Version="2.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NewTech.ProjectsNG.Application.Shared\NewTech.ProjectsNG.Application.Shared.csproj" />
+    <ProjectReference Include="..\NewTech.ProjectsNG.Core\NewTech.ProjectsNG.Core.csproj" />
+    <ProjectReference Include="..\NewTech.ProjectsNG.EntityFrameworkCore\NewTech.ProjectsNG.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
+</Project>
